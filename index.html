@@ -62,64 +62,13 @@
     </div>
   </section>
 
-  <section id="buchung" class="section">
-    <div class="container narrow">
-      <h2>Beratungstermin buchen</h2>
-      <p class="intro">Ob Aquarium-Einrichtung, Fischkunde oder eine Verkostung: Reservieren Sie einfach Ihren Wunschtermin.</p>
-
-      <form id="booking-form" class="booking-form" novalidate>
-        <div class="field">
-          <label for="name">Name *</label>
-          <input type="text" id="name" name="name" required minlength="2" placeholder="Max Mustermann">
-        </div>
-
-        <div class="field">
-          <label for="email">E-Mail *</label>
-          <input type="email" id="email" name="email" required placeholder="max@beispiel.de">
-        </div>
-
-        <div class="field">
-          <label for="phone">Telefon</label>
-          <input type="tel" id="phone" name="phone" placeholder="0511 123456">
-        </div>
-
-        <div class="field">
-          <label for="service">Leistung *</label>
-          <select id="service" name="service" required>
-            <option value="">Bitte wählen</option>
-            <option value="beratung">Fischberatung (30 Min.)</option>
-            <option value="aquarium">Aquarium-Check (60 Min.)</option>
-            <option value="verkostung">Räucherfisch-Verkostung (45 Min.)</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="date">Datum *</label>
-          <input type="date" id="date" name="date" required>
-        </div>
-
-        <div class="field">
-          <label for="time">Uhrzeit *</label>
-          <select id="time" name="time" required disabled>
-            <option value="">Bitte zuerst Datum und Leistung wählen</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="persons">Anzahl Personen</label>
-          <input type="number" id="persons" name="persons" min="1" max="10" value="1">
-        </div>
-
-        <div class="field">
-          <label for="notes">Anmerkungen</label>
-          <textarea id="notes" name="notes" rows="3" placeholder="z. B. Größe des Aquariums, Wünsche ..."></textarea>
-        </div>
-
-        <button type="submit" class="btn">Termin verbindlich buchen</button>
-        <p id="form-message" class="form-message" role="alert"></p>
-      </form>
-    </div>
-  </section>
+<section id="buchung" class="section">
+  <div class="container narrow">
+    <h2>Termin buchen</h2>
+    <p class="intro">Reservieren Sie Ihren Wunschtermin direkt bei uns.</p>
+    <a href="https:https://meerblau.simplybook.it" target="_blank" rel="noopener" class="btn">Jetzt Termin buchen</a>
+  </div>
+</section>
 
   <footer class="footer">
     <div class="container">
