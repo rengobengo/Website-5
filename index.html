@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fischladen Meerblau</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Meerblau</a>
+      <nav>
+        <a href="#sortiment">Sortiment</a>
+        <a href="#oeffnungszeiten">Öffnungszeiten</a>
+        <a href="#buchung" class="btn-small">Termin buchen</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Frisch vom Kutter, direkt zu Ihnen</h1>
+      <p>Seit 1987 Ihr Fischfachgeschäft mit Tagesfang, Räucherwaren und fachkundiger Beratung.</p>
+      <a href="#buchung" class="btn">Beratungstermin buchen</a>
+    </div>
+  </section>
+
+  <section id="sortiment" class="section">
+    <div class="container">
+      <h2>Unser Sortiment</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Frischfisch</h3>
+          <p>Tagesfang aus der Nordsee: Scholle, Dorsch, Seelachs und Hering, am Morgen eingetroffen und fachgerecht filetiert.</p>
+        </article>
+        <article class="card">
+          <h3>Räucherfisch</h3>
+          <p>Heiß- und kaltgeräucherte Spezialitäten aus eigener Räucherei, zum Beispiel Makrele, Lachs und Forelle.</p>
+        </article>
+        <article class="card">
+          <h3>Feinkost</h3>
+          <p>Matjes, Heringssalate, Fischfrikadellen und hausgemachte Dips für Feiern und den Alltag.</p>
+        </article>
+        <article class="card">
+          <h3>Aquaristik</h3>
+          <p>Wasserpflege, Futter und Zubehör für Süß- und Salzwasseraquarien, mit Wasserwerte-Check vor Ort.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="oeffnungszeiten" class="section section-alt">
+    <div class="container">
+      <h2>Öffnungszeiten</h2>
+      <table class="hours">
+        <tr><td>Montag bis Freitag</td><td>08:00 – 18:00 Uhr</td></tr>
+        <tr><td>Samstag</td><td>08:00 – 14:00 Uhr</td></tr>
+        <tr><td>Sonntag</td><td>geschlossen</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="buchung" class="section">
+    <div class="container narrow">
+      <h2>Beratungstermin buchen</h2>
+      <p class="intro">Ob Aquarium-Einrichtung, Fischkunde oder eine Verkostung: Reservieren Sie einfach Ihren Wunschtermin.</p>
+
+      <form id="booking-form" class="booking-form" novalidate>
+        <div class="field">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" required minlength="2" placeholder="Max Mustermann">
+        </div>
+
+        <div class="field">
+          <label for="email">E-Mail *</label>
+          <input type="email" id="email" name="email" required placeholder="max@beispiel.de">
+        </div>
+
+        <div class="field">
+          <label for="phone">Telefon</label>
+          <input type="tel" id="phone" name="phone" placeholder="0511 123456">
+        </div>
+
+        <div class="field">
+          <label for="service">Leistung *</label>
+          <select id="service" name="service" required>
+            <option value="">Bitte wählen</option>
+            <option value="beratung">Fischberatung (30 Min.)</option>
+            <option value="aquarium">Aquarium-Check (60 Min.)</option>
+            <option value="verkostung">Räucherfisch-Verkostung (45 Min.)</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="date">Datum *</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="field">
+          <label for="time">Uhrzeit *</label>
+          <select id="time" name="time" required disabled>
+            <option value="">Bitte zuerst Datum und Leistung wählen</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="persons">Anzahl Personen</label>
+          <input type="number" id="persons" name="persons" min="1" max="10" value="1">
+        </div>
+
+        <div class="field">
+          <label for="notes">Anmerkungen</label>
+          <textarea id="notes" name="notes" rows="3" placeholder="z. B. Größe des Aquariums, Wünsche ..."></textarea>
+        </div>
+
+        <button type="submit" class="btn">Termin verbindlich buchen</button>
+        <p id="form-message" class="form-message" role="alert"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Fischladen Meerblau · Musterstraße 1 · 12345 Musterstadt · Tel. 0123 456789</p>
+      <p>Fiktive Website für Testzwecke</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
